@@ -1,12 +1,9 @@
-Welcome to Read The Docs
+Welcome to Worbix
 ========================
 
-`Read the Docs`_ hosts documentation for the open source community.
-It supports Sphinx_ docs written with reStructuredText_, and can pull
-from your Subversion_, Bazaar_, Git_, and Mercurial_ repositories.
-The code is open source, and `available on github`_.
+Using Worbix we have created Socialagent360`_ application.
 
-.. _Read the docs: http://readthedocs.org/
+.. _Socialagent360: http://socialagent360.com/
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://sphinx.pocoo.org/rest.html
 .. _Subversion: http://subversion.tigris.org/
