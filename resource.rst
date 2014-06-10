@@ -13,8 +13,11 @@ Write Your Docs
 
 Install Sphinx_, and create a directory inside your project to hold your docs::
 
-    $ cd /path/to/project
-    $ mkdir docs
+    public T getNode();
+    public Space<?> getSpace();
+    public Promise<List<PropertyValue<?>>> getPropertyValues();
+    public Promise<EnumerablePermission> getPermissions(EnumerablePermission mask);
+    public EnumerablePermission getPermissions();
 
 Run ``sphinx-quickstart`` in there::
 
