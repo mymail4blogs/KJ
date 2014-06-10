@@ -12,11 +12,18 @@ Using Worbix we have created Socialagent360_ application.
 .. _Mercurial: http://mercurial.selenic.com/
 .. _available on github: http://github.com/rtfd/readthedocs.org
 
-The main documentation for the site is organized into a couple sections:
+The main components of Worbix Frameworks are following :
 
-* :ref:`site-docs`
-* :ref:`feature-docs`
-* :ref:`about-docs`
+* :ref:resource
+* :ref:node
+* :ref:resourceTemplate
+* :ref:space
+* :ref:spaceTemplate
+* :ref:propertyType
+* :ref:propertyValue
+* :ref:worbixListItem
+
+
 
 Information about development and running your own instance is also available:
 
@@ -24,15 +31,15 @@ Information about development and running your own instance is also available:
 * :ref:`design-docs`
 * :ref:`ops-docs`
 
-.. _site-docs:
+.. _resource:
 
-User Documentation
+Resource
 ------------------
 
 .. toctree::
     :maxdepth: 2
 
-    getting_started
+    resource
     builds
     features
     support
