@@ -14,29 +14,25 @@ Using Worbix we have created Socialagent360_ application.
 
 The main components of Worbix Frameworks are following :
 
-* :ref:`resource-docs`
-* :ref:`node-docs`
-* :ref:`resource-template-docs`
-* :ref:`space-docs`
-* :ref:`space-template-docs`
-* :ref:`property-type-docs`
-* :ref:`property-value-docs`
-* :ref:`worbix-list-item-docs`
+* :ref:`component-docs`
 
 
-.. _resource-docs:
+.. _component-docs:
 
-Resource
+Components
 ------------------
 
 .. toctree::
     :maxdepth: 2
 
     resource
-    builds
-    features
-    support
-    faq
+    node
+    space
+    resource_template
+    space_template
+    property_type
+    property_value
+    worbix_list_item
 
 .. _feature-docs:
 
