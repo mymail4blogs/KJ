@@ -14,7 +14,7 @@ Using Worbix we have created Socialagent360_ application.
 
 The main components of Worbix Frameworks are following :
 
-* :ref:resource
+* :ref:`resource-docs`
 * :ref:node
 * :ref:resourceTemplate
 * :ref:space
@@ -31,7 +31,7 @@ Information about development and running your own instance is also available:
 * :ref:`design-docs`
 * :ref:`ops-docs`
 
-.. _resource:
+.. _resource-docs:
 
 Resource
 ------------------
