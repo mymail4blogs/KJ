@@ -1,7 +1,7 @@
 Welcome to Worbix
 ========================
 
-Using Worbix we have created Socialagent360`_ application.
+Using Worbix we have created Socialagent360_ application.
 
 .. _Socialagent360: http://socialagent360.com/
 .. _Sphinx: http://sphinx.pocoo.org/
