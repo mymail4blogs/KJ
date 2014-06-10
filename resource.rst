@@ -1,7 +1,12 @@
-Getting Started
+Methods
 ===============
+ Following  functionality provided by Resource::
 
-This document will show you how to get up and running with Read the Docs.
+ public T getNode();
+ public Space<?> getSpace();
+ public Promise<List<PropertyValue<?>>> getPropertyValues();
+ public Promise<EnumerablePermission> getPermissions(EnumerablePermission mask);
+ public EnumerablePermission getPermissions();
 
 If you are already using Sphinx_ for your docs, skip ahead to
 :ref:`import-docs`.
