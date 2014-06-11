@@ -30,41 +30,34 @@ How to associate a resource with space ?
 ----------------------------------------------------------
 
 .. note::
-    Another use case for this is when you have a module with a C extension.
+    This is the way we can add a new note
 
-This happens because our build system doesn't have the dependencies for building your project. This happens with things like libevent and mysql, and other python things that depend on C libraries. We can't support installing random C binaries on our system, so there is another way to fix these imports.
 
-You can mock out the imports for these modules in your conf.py with the following snippet::
 
-    import sys
+code snippet::
 
-    class Mock(object):
-        
-        __all__ = []
-       
-        def __init__(self, *args, **kwargs):
-            pass
+    
 
-        def __call__(self, *args, **kwargs):
-            return Mock()
+    public abstract class AbstractResourceTemplate implements ResourceTemplate {
+    private Space<?> space;
+    private PropertyTypeLoader propertyTypeLoader;
+    private Function<List<PropertyType>, List<PropertyType>> staticPropertyFilter;
+    
+    protected AbstractResourceTemplate(){
+    }
+    
+    public void setSpace(Space<?> space){
+        this.space = space;
+    }
+    
+    public void setPropertyTypeLoader(PropertyTypeLoader propertyTypeLoader){
+        this.propertyTypeLoader = propertyTypeLoader;
+    }
+    
+    
+ }
 
-        @classmethod
-        def __getattr__(cls, name):
-            if name in ('__file__', '__path__'):
-                return '/dev/null'
-            elif name[0] == name[0].upper():
-                mockType = type(name, (), {})
-                mockType.__module__ = __name__
-                return mockType
-            else:
-                return Mock()
-
-    MOCK_MODULES = ['pygtk', 'gtk', 'gobject', 'argparse']
-    for mod_name in MOCK_MODULES:
-        sys.modules[mod_name] = Mock()
-
-Of course, replacing `MOCK_MODULES` with the modules that you want to mock out.
-
+    
 How to create a new property?
 ----------------------------------------------------------
 
@@ -148,22 +141,4 @@ How to assign a role to a contact?
 
 No. Whitelisting has been removed as a concept in Read the Docs. You should have access to all of the features already.
 
-Does Read The Docs work well with "legible" docstrings?
--------------------------------------------------------
 
-Yes. One criticism of Sphinx is that its annotated docstrings are too
-dense and difficult for humans to read. In response, many projects
-have adopted customized docstring styles that are simultaneously
-informative and legible. The
-`NumPy <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`_
-and
-`Google <http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Comments#Comments>`_
-styles are two popular docstring formats.  Fortunately, the default
-Read The Docs theme handles both formats just fine, provided
-your ``conf.py`` specifies an appropriate Sphinx extension that
-knows how to convert your customized docstrings.  Two such extensions
-are `numpydoc <https://github.com/numpy/numpydoc>`_ and
-`napoleon <http://sphinxcontrib-napoleon.readthedocs.org>`_. Only
-``napoleon`` is able to handle both docstring formats. Its default
-output more closely matches the format of standard Sphinx annotations,
-and as a result, it tends to look a bit better with the default theme.
