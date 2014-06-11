@@ -15,6 +15,7 @@ Using Worbix we have created Socialagent360_ application.
 The main components of Worbix Frameworks are following :
 
 * :ref:`component-docs`
+* :ref:`faq-docs`
 
 
 .. _component-docs:
@@ -37,7 +38,7 @@ Components
 .. _feature-docs:
 
 
-.. _dev-docs:
+.. _faq-docs:
 
 Developer Documentation
 -----------------------
