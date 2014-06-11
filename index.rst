@@ -20,7 +20,7 @@ The main components of Worbix Frameworks are following :
 
 .. _component-docs:
 
-Components
+Developer Documentation
 ------------------
 
 .. toctree::
@@ -40,7 +40,7 @@ Components
 
 .. _faq-docs:
 
-Developer Documentation
+Frequently Asked Question
 -----------------------
 
 .. toctree::
@@ -56,39 +56,3 @@ Developer Documentation
     api
     api/index
 
-.. _design-docs:
-
-Designer Documentation
-----------------------
-
-.. toctree::
-    :maxdepth: 2
-
-    design
-    theme
-
-.. _about-docs:
-
-About Read the Docs
--------------------
-
-.. toctree::
-    :maxdepth: 2
-
-    sponsors
-    talks
-
-
-.. Things that need more love before getting upgraded to the above list.
-
-.. _custom-docs:
-
-.. _ops-docs:
-
-Operations Documentation
-------------------------
-
-.. toctree::
-    :maxdepth: 2
-
-    rtfd
