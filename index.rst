@@ -37,7 +37,7 @@ Design Documentation
     worbix_list_item
 
 
-.. _util-docs
+.. _util-docs:
 
 Developer Documentation
 ------------------------
