@@ -16,7 +16,7 @@ The main components of Worbix Frameworks are following :
 
 * :ref:`component-docs`
 * :ref:`help-docs`
-* :ref:'util-docs'
+* :ref:`util-docs`
 
 
 .. _component-docs:
