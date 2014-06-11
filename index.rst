@@ -16,11 +16,12 @@ The main components of Worbix Frameworks are following :
 
 * :ref:`component-docs`
 * :ref:`help-docs`
+* :ref:'util-docs'
 
 
 .. _component-docs:
 
-Developer Documentation
+Design Documentation
 ------------------
 
 .. toctree::
@@ -36,6 +37,15 @@ Developer Documentation
     worbix_list_item
 
 
+.. _util-docs
+
+Developer Documentation
+------------------------
+.. toctree::
+    :maxdepth: 1
+    
+    node_criteria
+    permission
 
 .. _help-docs:
 
