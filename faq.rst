@@ -1,14 +1,14 @@
-Frequently Asked Question
-=========================
+Frequently Asked Questions
+==========================
 
-My project isn't building with autodoc
+How to create a new site ?
 --------------------------------------
 
 First, you should check out the Builds tab of your project. That records all of the build attempts that RTD has made to build your project. If you see ``ImportError`` messages for custom Python modules, you should enable the virtualenv feature in the Admin page of your project, which will install your project into a virtualenv, and allow you to specify a ``requirements.txt`` file for your project.
 
 If you are still seeing errors because of C library dependencies, please see the below section about that.
 
-How do I change behavior for Read the Docs?
+How to create a new space ?
 -------------------------------------------
 
 When RTD builds your project, it sets the `READTHEDOCS` environment variable to the string `True`. So within your Sphinx's conf.py file, you can vary the behavior based on this. For example::
@@ -26,7 +26,7 @@ The ``READTHEDOCS`` variable is also available in the Sphinx build environment, 
     Woo
     {% endif %}
 
-I get import errors on libraries that depend on C modules
+How to associate a resource with space ?
 ----------------------------------------------------------
 
 .. note::
@@ -65,7 +65,7 @@ You can mock out the imports for these modules in your conf.py with the followin
 
 Of course, replacing `MOCK_MODULES` with the modules that you want to mock out.
 
-Can I make search engines only see one version of my docs?
+How to create a new property?
 ----------------------------------------------------------
 
 You can do this for Google at least with a canonical link tag.
@@ -85,13 +85,13 @@ It should look like:
         ">
 
 
-Deleting a stale or broken build environment
+How to associate one property with space and resource
 --------------------------------------------
 
 RTD doesn't expose this in the UI, but it is possible to remove the build directory of your project. If you want to remove a build environment for your project, hit http://readthedocs.org/wipe/<project_slug>/<version_slug>/. You must be logged in to do this.
 
 
-How do I host multiple projects on one CNAME?
+How to create a new category?
 ---------------------------------------------
 
 We support the concept of Subprojects.
@@ -110,7 +110,7 @@ http://docs.celeryproject.org/projects/kombu/en/latest/
 
 You can add subprojects in the Admin section for your project.
 
-Where do I need to put my docs for RTD to find it?
+How to add a category to the property ?
 --------------------------------------------------
 
 Read the Docs will crawl your project looking for a ``conf.py``. Where it finds the ``conf.py``, it will run ``sphinx-build`` in that directory. So as long as you only have one set of sphinx documentation in your project, it should Just Work.
@@ -120,30 +120,30 @@ I want to use the Blue/Default Sphinx theme
 
 We think that our theme is badass, and better than the default for many reasons. Some people don't like change though :), so there is a hack that will let you keep using the default theme. If you set the ``html_style`` variable in your ``conf.py``, it should default to using the default theme. The value of this doesn't matter, and can be set to ``/default.css`` for default behavior.
 
-I want to use the Read the Docs theme locally
+How to check permission on space ?
 ---------------------------------------------
 
 There is a repository for that: https://github.com/snide/sphinx_rtd_theme.
 Simply follow the instructions in the README.
 
-Image scaling doesn't work in my documentation
+How to check permission on a resource ?
 -----------------------------------------------
 
 Image scaling in docutils depends on PIL. PIL is installed in the system that RTD runs on. However, if you are using the virtualenv building option, you will likely need to include PIL in your requirements for your project.
 
-I want comments in my docs
+How to check permission on category ?
 --------------------------
 
 RTD doesn't have explicit support for this. That said, a tool like `Disqus`_ can be used for this purpose on RTD.
 
 .. _Disqus: http://disqus.com/
 
-How do I support multiple languages of documentation?
+How to add a space to a site?
 -----------------------------------------------------
 
 See the section on :ref:`Localization of Documentation`.
 
-Do I need to be whitelisted?
+How to assign a role to a contact?
 ----------------------------
 
 No. Whitelisting has been removed as a concept in Read the Docs. You should have access to all of the features already.
